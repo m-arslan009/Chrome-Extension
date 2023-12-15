@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #5f9341;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    background: lightblue;
+}
+
+button {
+    background: #5f9341;
+    color: white;
+    margin-top: 8px;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
