@@ -1,9 +1,9 @@
-function btnClicked() {
-    console.log("button clicked")
-}
+const intputBtn = document.getElementById("input-btn");
+const inputEl = document.getElementById("input-el");
+let myLead = [];
 
-let intputBtn = document.getElementById("input-btn");
 
 intputBtn.addEventListener("click", function() {
-    
+    myLead.push(inputEl.value);
+    console.log(myLead)
 });
