@@ -5,5 +5,9 @@ let myLead = [];
 
 intputBtn.addEventListener("click", function() {
     myLead.push(inputEl.value);
-    console.log(myLead)
+    for(let i = 0; i < myLead.length; i++) {
+        console.log(myLead[i]);
+    }
+
 });
+
