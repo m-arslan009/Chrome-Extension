@@ -18,30 +18,30 @@ const deleteBtn = document.getElementById("delete-btn");
 
 if(localStorage.getItem("myLeads")) {
     myLead = items;
-    renderLead();
+    renderLead(myLead);
 }
 
 deleteBtn.addEventListener("dblclick", function() {
     localStorage.clear();
     myLead = [];
-    renderLead();
+    renderLead(myLead);
 })
 
 intputBtn.addEventListener("click", function() {
     myLead.push(inputEl.value);
     inputEl.value = "";
     localStorage.setItem("myLeads", JSON.stringify(myLead));
-    renderLead();
+    renderLead(myLead);
 });
 
-function renderLead() {
+function renderLead(lead) {
     let listItems = "";
-    for(let i = 0; i < myLead.length; i++) {
+    for(let i = 0; i < lead.length; i++) {
         // listItems += "<li><a href = " + myLead[i] + " target = '_blank'>" + myLead[i] + "</a> </li>";
         listItems += `
             <li>
-                <a href = '${myLead[i]}' target = '_blank'> 
-                    ${myLead[i]}
+                <a href = '${lead[i]}' target = '_blank'> 
+                    ${lead[i]}
                 </a>
             </li>
         `
