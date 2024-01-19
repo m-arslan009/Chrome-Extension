@@ -13,6 +13,12 @@ const ulEl = document.getElementById("ul-el");
 // myLead.push("www.youtube.com");
 // console.log(typeof myLead)
 
+if(localStorage.getItem("myLeads")) {
+    let items = JSON.parse(localStorage.getItem("myLeads"));
+    myLead = items;
+    renderLead();
+}
+
 intputBtn.addEventListener("click", function() {
     myLead.push(inputEl.value); // Now `push()` should work as expected
     inputEl.value = "";
