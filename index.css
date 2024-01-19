@@ -11,12 +11,17 @@ input {
   border: 1px solid #5f9341;
   margin-bottom: 4px; }
 
-button {
+.action-btn {
   background: #5f9341;
   color: white;
   padding: 10px 20px;
   border: none;
   font-weight: bold; }
+
+#delete-btn {
+  color: #5f9341;
+  border: 1.5px solid #5f9341;
+  background-color: transparent; }
 
 ul {
   padding: 0; }
