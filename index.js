@@ -3,7 +3,7 @@ const inputEl = document.getElementById("input-el");
 let myLead = [];
 const ulEl = document.getElementById("ul-el");
 
-console.log(typeof myLead)
+// console.log(typeof myLead)
 // convert js object to string that is necessery to store data in local storage
 // myLead = JSON.stringify(myLead)
 
@@ -18,8 +18,6 @@ intputBtn.addEventListener("click", function() {
     inputEl.value = "";
     localStorage.setItem("myLeads", JSON.stringify(myLead));
     renderLead();
-
-    console.log(localStorage.getItem("myLeads"));
 });
 
 function renderLead() {
@@ -38,4 +36,3 @@ function renderLead() {
     ulEl.innerHTML = listItems;
     
 }
-
