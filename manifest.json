@@ -1,9 +1,12 @@
 {
     "manifest_version": 3,
     "version": "1.0",
-    "name": "web saver",
+    "name": "Leads tracker",
     "action": {
         "default_popup": "index.html",
         "default_icon": "icone-du-monde-vert.png"
-    }
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
